@@ -45,6 +45,7 @@ h2 {
 
 header {
     background-color: var(--azul);
+    
 }
 
 header h1 {
@@ -55,11 +56,17 @@ header h1 {
 
     text-transform: uppercase;
 }
+@media (min-width: 768px) {
+    .formulario {
+        padding: 5rem 0;
+        width: 60rem;
+    }
+}
 
 .formulario {
     width: 95%;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 @media (min-width: 768px) {
     .formulario {
@@ -155,13 +162,20 @@ header h1 {
 }
 .contenedor-presupuesto {
     margin-top: -5rem;
-
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem;
 
     transform: translateY(5rem);
 }
+@media (min-width: 768px) {
+    .contenedor-presupuesto {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
 .dos-columnas {
     flex-direction: column;
 }
