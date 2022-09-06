@@ -26,7 +26,7 @@ const ListadoGastos = ({
           </>
     ) : (
           <>
-                <h2>{gastosFiltrados.length ? 'Gastos' : 'No hay Gastos aún'}</h2>
+                <h2>{gastos.length ? 'Gastos' : 'No hay Gastos aún'}</h2>
                 {gastos.map( gasto => (
                   <Gasto
                   key={gasto.id}
